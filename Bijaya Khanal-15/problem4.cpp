@@ -102,7 +102,7 @@ int main()
     
             cout<<endl;
             cout<<"1.Deposit"<<endl;
-            cout<<"1.withdraw"<<endl;
+            cout<<"2.withdraw"<<endl;
             int i;
             cout<<"Enter choice: ";
             cin>>i;
@@ -120,7 +120,7 @@ int main()
                 case 2:
                 {
                     double amt;
-                    cout<<"Enter amount u want to deposit:"<<endl;
+                    cout<<"Enter amount u want to withdram:"<<endl;
                     cin>>amt;
                     Acc->withdraw(amt);
                     Acc->display();
