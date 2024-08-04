@@ -8,9 +8,9 @@ class Account
     double balance;
     public:
     Account(int AccNo=0, double balnc=0.0):AccountNumber(AccNo),balance(balnc){}
-    virtual void deposit(double amt){}
-    virtual void withdraw(double amt){}
-    virtual void display()
+    virtual void deposit(double amt)=0;
+    virtual void withdraw(double amt)=0;
+    virtual void display()=0;
     {
         cout << "Account Number: " << AccountNumber << ", Balance: " << balance << endl;
     }
