@@ -14,7 +14,7 @@
         3) Savings Account have a transaction limit of 5 withdrawls per year, where year corresponds the same.
         4) Checking Account does not have any compounding interest rate and have a fixed balance and can be withdrawed at any time for any time.
 
-        For calculating program execution duration executionTime() function is made.
+        For calculating program execution duration runTime() function is made.
 */
 
 
