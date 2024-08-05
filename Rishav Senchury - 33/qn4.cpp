@@ -56,8 +56,8 @@ public:
     void display() const override 
 	{
         cout << "Saving Account Number: " << accountNumber << std::endl;
-        cout << "Balance: " << std::fixed << std::setprecision(2) << balance << std::endl;
-        cout << "Interest Rate: " << interestRate * 100 << "%" << std::endl;
+        cout << "Balance: " << fixed << setprecision(2) << balance << endl;
+        cout << "Interest Rate: " << interestRate * 100 << "%" <<endl;
     }
 };
 
@@ -90,7 +90,7 @@ public:
     void display() const override 
 	{
         cout << "Checking Account Number: " << accountNumber << endl;
-        cout << "Balance: " << std::fixed << std::setprecision(2) << balance << endl;
+        cout << "Balance: " << fixed << setprecision(2) << balance << endl;
         cout << "Overdraft Limit: " << overdraftLimit << endl;
     }
 };
@@ -142,14 +142,14 @@ void performOperations(Account *account)
         switch (operation) 
 		{
             case 1:
-                std::cout << "Enter amount to deposit: ";
-                std::cin >> amount;
+                cout << "Enter amount to deposit: ";
+                cin >> amount;
                 account->deposit(amount);
                 break;
 
             case 2:
-                std::cout << "Enter amount to withdraw: ";
-                std::cin >> amount;
+                cout << "Enter amount to withdraw: ";
+                cin >> amount;
                 account->withdraw(amount);
                 break;
 
@@ -158,11 +158,11 @@ void performOperations(Account *account)
                 break;
 
             case 4:
-                std::cout << "Exiting operations." << std::endl;
+                cout << "Exiting operations." << std::endl;
                 return;
 
             default:
-                std::cout << "Invalid choice. Please enter a valid option." << std::endl;
+                cout << "Invalid choice. Please enter a valid option." << std::endl;
         }
     }
 }
